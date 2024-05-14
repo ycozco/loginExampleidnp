@@ -16,9 +16,6 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_home"
-            android:exported="false" />
-        <activity
             android:name=".AccountActivity"
             android:exported="false" />
         <activity
