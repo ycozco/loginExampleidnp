@@ -25,6 +25,10 @@ public class LoginActivity extends AppCompatActivity {
 
         if (getIntent().hasExtra("accountEntity")) {
             accountEntity = getIntent().getParcelableExtra("accountEntity");
+            if (accountEntity != null) {
+                binding.editTextLogin.setText(accountEntity.getUsername());
+                binding.editTextPassword.setText(accountEntity.getPassword());
+            }
         }
 
         EditText edtUsername = binding.editTextLogin;
